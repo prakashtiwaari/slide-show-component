@@ -20,6 +20,7 @@ const SliderContainer = ({firstSlideName, secondSlideName, thirdSlideName}) => {
     }
 
     const callBack = () => {
+        console.log('here')
         setSecondSlide(false);
         setThirdSlide(false);
         setTimeout(callBack2, 1000)
