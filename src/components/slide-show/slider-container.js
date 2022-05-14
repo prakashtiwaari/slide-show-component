@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import Slide from "./slide";
 
 const SliderContainer = ({firstSlideName, secondSlideName, thirdSlideName}) => {
-    const colors = ["#FFBB28", "#00C49F", "#FFBB28"];
+    const colors = ["#F39088", "#00C49F", "#FFBB28"];
 
 
     return (

@@ -6,7 +6,7 @@ function Slide(props) {
 
     return (
         <div className='slide' style={{backgroundColor}}>
-            <h1>{props.slideName}</h1>
+            <h3>{props.slideName}</h3>
         </div>
     );
 }
