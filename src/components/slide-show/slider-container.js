@@ -1,10 +1,29 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Slide from "./slide";
 
-const SliderContainer = () => {
+const SliderContainer = ({firstSlideName, secondSlideName, thirdSlideName}) => {
+    const colors = ["#0088FE", "#00C49F", "#FFBB28"];
+    const [index, setIndex] = useState(0);
+    const delay = 250;
+
+    React.useEffect(() => {
+        setTimeout(() => setIndex((prevIndex) => prevIndex
+            === colors.length - 1 ? 0 : prevIndex + 1),
+            delay);
+
+        return () => {
+        };
+    }, [index]);
+
     return (
-        <div>
-            <Slide slideName={'why are you not rendering'}/>
+        <div className='slideshow-slider'
+             style={{
+                 transform: `translate3d(${-0 * 100}%, 0, 0)`
+             }}
+        >
+            <Slide slideName={firstSlideName} backgroundColor={colors[0]}/>
+            <Slide slideName={secondSlideName} backgroundColor={colors[1]}/>
+            <Slide slideName={thirdSlideName} backgroundColor={colors[2]}/>
         </div>
     );
 }
