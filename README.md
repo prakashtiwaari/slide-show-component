@@ -12,4 +12,4 @@ You will just need to import this in to your project and use it.
 2. colorName
 
 ## Github Repository
->[Slide show component](https://www.google.com)
+>[Slide show component](https://github.com/prakashtiwaari/slide-show-component)
