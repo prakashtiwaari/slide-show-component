@@ -3,7 +3,7 @@ import Slide from "./slide";
 
 const SliderContainer = ({firstSlideName, secondSlideName, thirdSlideName}) => {
     const colors = ["#0088FE", "#00C49F", "#FFBB28"];
-    const [index, setIndex] = useState(0);
+   /* const [index, setIndex] = useState(0);
     const delay = 2500;
 
     React.useEffect(() => {
@@ -13,12 +13,12 @@ const SliderContainer = ({firstSlideName, secondSlideName, thirdSlideName}) => {
 
         return () => {
         };
-    }, [index]);
+    }, [index]);*/
 
     return (
         <div className='slideshow-slider'
              style={{
-                 transform: `translate3d(${-index * 100}%, 0, 0)`
+                 transform: `translate3d(${-1 * 100}%, 0, 0)`
              }}
         >
             <Slide slideName={firstSlideName} backgroundColor={colors[0]}/>
