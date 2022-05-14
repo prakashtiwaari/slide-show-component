@@ -3,17 +3,6 @@ import Slide from "./slide";
 
 const SliderContainer = ({firstSlideName, secondSlideName, thirdSlideName}) => {
     const colors = ["#0088FE", "#00C49F", "#FFBB28"];
-   /* const [index, setIndex] = useState(0);
-    const delay = 2500;
-
-    React.useEffect(() => {
-        setTimeout(() => setIndex((prevIndex) => prevIndex
-            === colors.length - 1 ? 0 : prevIndex + 1),
-            delay);
-
-        return () => {
-        };
-    }, [index]);*/
 
     return (
         <div className='slideshow-slider'
