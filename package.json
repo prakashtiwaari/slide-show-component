@@ -1,6 +1,6 @@
 {
   "name": "slide-show-component",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "A slider component for react",
   "main": "./build/index.js",
   "scripts": {
