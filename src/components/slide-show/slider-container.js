@@ -18,7 +18,7 @@ const SliderContainer = ({firstSlideName, secondSlideName, thirdSlideName}) => {
     return (
         <div className='slideshow-slider'
              style={{
-                 transform: `translate3d(${-0 * 100}%, 0, 0)`
+                 transform: `translate3d(${-index * 100}%, 0, 0)`
              }}
         >
             <Slide slideName={firstSlideName} backgroundColor={colors[0]}/>
